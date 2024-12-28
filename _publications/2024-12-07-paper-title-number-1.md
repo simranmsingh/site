@@ -1,7 +1,7 @@
 ---
 title: "Greener Pastures? A Labor Market Theory of Climate Governance"
 collection: publications
-category: working papers
+category: working_papers
 permalink: 2016-02-01-paper-title-number-1
 date: 2024-12-07
 venue: ''
