@@ -25,14 +25,12 @@ author_profile: true
       {% endunless %}
       <div class="archive-item">
         <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-        
-        <!-- Suppress "Published in" for specific categories -->
-        {% unless post.category == "working-papers" %}
-          {% if post.journal %}
-            <p><em>Published in {{ post.journal }}</em></p>
-          {% endif %}
-        {% endunless %}
-        
+
+        <!-- Show "Published in" only for non-working-paper categories -->
+        {% if post.category != "working_papers" and post.journal %}
+          <p><em>Published in {{ post.journal }}</em></p>
+        {% endif %}
+
         <p>{{ post.excerpt }}</p>
       </div>
     {% endfor %}
@@ -41,14 +39,12 @@ author_profile: true
   {% for post in site.publications reversed %}
     <div class="archive-item">
       <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-      
-      <!-- Suppress "Published in" for specific categories -->
-      {% unless post.category == "working-papers" %}
-        {% if post.journal %}
-          <p><em>Published in {{ post.journal }}</em></p>
-        {% endif %}
-      {% endunless %}
-      
+
+      <!-- Show "Published in" only for non-working-paper categories -->
+      {% if post.category != "working_papers" and post.journal %}
+        <p><em>Published in {{ post.journal }}</em></p>
+      {% endif %}
+
       <p>{{ post.excerpt }}</p>
     </div>
   {% endfor %}
