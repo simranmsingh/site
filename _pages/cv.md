@@ -11,7 +11,7 @@ redirect_from:
 
 Education
 ======
-* Ph.D Candidate, Department of Political Science, GitHub University, 2028 (expected)
+* Ph.D Candidate, Department of Political Science, Columbia University, 2028 (expected)
 * M.A. in Political Science, Columbia University, 2024
 * B.A. in Political Science and Economics with Honors, Swarthmore College, 2019
 
