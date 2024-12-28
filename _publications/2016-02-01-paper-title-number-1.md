@@ -3,7 +3,7 @@ title: "How do independent directors view powerful CEOs? Evidence from a quasi-n
 collection: publications
 category: manuscripts
 permalink: 2016-02-01-paper-title-number-1
-date: 2009-10-01
+date: 2016-02-01
 venue: 'Finance Research Letters'
 paperurl: 'https://www.sciencedirect.com/science/article/abs/pii/S1544612315001403'
 citation: 'Jiraporn, P., Jumreornvong, S., Jiraporn, N., & Singh, S. (2016). How do independent directors view powerful CEOs? Evidence from a quasi-natural experiment. Finance Research Letters, 16, 268-274.'
