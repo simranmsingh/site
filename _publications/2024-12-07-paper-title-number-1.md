@@ -2,8 +2,8 @@
 title: "'Greener Pastures? A Labor Market Theory of Climate Governance' with Calvin Thrall and Noah Zucker"
 collection: publications
 category: working_papers
-permalink: 2016-02-01-paper-title-number-1
-date: 
+permalink: 2024-12-07-paper-title-number-1
+date: 2024-12-07
 venue: 
 paperurl: 'https://osf.io/preprints/osf/6ue7n'
 ---
