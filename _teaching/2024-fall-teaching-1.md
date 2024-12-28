@@ -1,4 +1,3 @@
-
 ---
 title: "Teaching Assistant: International Political Economy"
 collection: teaching
