@@ -23,29 +23,13 @@ author_profile: true
         <h2>{{ category[1].title }}</h2><hr />
         {% assign title_shown = true %}
       {% endunless %}
-      <div class="archive-item">
-        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-
-        <!-- Show "Published in" only for non-working-paper categories -->
-        {% if post.category != "working_papers" and post.journal %}
-          <p><em>Published in {{ post.journal }}</em></p>
-        {% endif %}
-
-        <p>{{ post.excerpt }}</p>
-      </div>
+      {% include archive-single.html %}
     {% endfor %}
   {% endfor %}
 {% else %}
   {% for post in site.publications reversed %}
-    <div class="archive-item">
-      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-
-      <!-- Show "Published in" only for non-working-paper categories -->
-      {% if post.category != "working_papers" and post.journal %}
-        <p><em>Published in {{ post.journal }}</em></p>
-      {% endif %}
-
-      <p>{{ post.excerpt }}</p>
-    </div>
+    {% include archive-single.html %}
   {% endfor %}
 {% endif %}
+
+
