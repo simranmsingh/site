@@ -141,6 +141,7 @@ exclude:
   - tmp
   - vendor
   - markdown.md
+   - assets
 keep_files:
   - .git
   - .svn
