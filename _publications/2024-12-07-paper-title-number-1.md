@@ -1,5 +1,5 @@
 ---
-title: "Greener Pastures? A Labor Market Theory of Climate Governance" with Calvin Thrall and Noah Zucker
+title: "Greener Pastures? A Labor Market Theory of Climate Governance with Calvin Thrall and Noah Zucker"
 collection: publications
 category: working_papers
 permalink: 2016-02-01-paper-title-number-1
