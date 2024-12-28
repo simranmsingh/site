@@ -144,6 +144,7 @@ exclude:
   - vendor
   - _talks
   - _portfolio
+  - markdown.md
 keep_files:
   - .git
   - .svn
