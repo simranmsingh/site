@@ -9,4 +9,3 @@ location: "New York, NY"
 ---
 
 Teaching Assistant for undergraduate intro to International Relations Course; responsible for 30 students and 2 weekly sections.
-
