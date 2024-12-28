@@ -6,7 +6,7 @@ permalink: /publication/2024-07-01-paper-title-number-2
 excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
 date: 2024-07-01
 venue: 'International Review of Financial Analysis'
-paperurl: '[http://academicpages.github.io/files/paper2.pdf](https://www.sciencedirect.com/science/article/abs/pii/S105752192400259X)'
+paperurl: 'https://www.sciencedirect.com/science/article/abs/pii/S105752192400259X'
 citation: 'Chatjuthamard, P., Singh, S., Jiraporn, P., & Lee, S. M. (2024). Climate change exposure, shareholder wealth, and the adoption of the Paris agreement: A text-based approach. International Review of Financial Analysis, 94, 103327.'
 ---
 
