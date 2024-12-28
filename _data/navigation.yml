@@ -6,11 +6,11 @@
 
 main:
   - title: "Working Papers and Publications"
-    url:   /publications/
+    url:   /site/publications/
 
   - title: "Teaching"
-    url:  /teaching/    
+    url:  /site/teaching/    
 
   - title: "CV"
-    url:  /cv/
+    url:  /site/cv/
     
