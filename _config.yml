@@ -140,8 +140,6 @@ exclude:
   - README
   - tmp
   - vendor
-  - _talks
-  - _portfolio
   - markdown.md
 keep_files:
   - .git
