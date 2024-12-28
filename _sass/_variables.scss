@@ -66,14 +66,14 @@ $body-color                 : #fafafa; // Background color
 $background-color           : #fafafa; // Background color
 $code-background-color      : #fafafa;
 $code-background-color-dark : $light-gray;
-$text-color                 : #420C14; // Text color
-$border-color               : #420C14; // Subtle border color
+$text-color                 : #593D3B; // Text color
+$border-color               : #593D3B; // Subtle border color
 
-$primary-color              : #420C14; // Main color
-$success-color              : #420C14; // Green tone for success
-$warning-color              : #420C14; // Accent warning color
-$danger-color               : #420C14;
-$info-color                 : #420C14; // Links and informational elements
+$primary-color              : #593D3B; // Main color
+$success-color              : #593D3B; // Green tone for success
+$warning-color              : #593D3B; // Accent warning color
+$danger-color               : #593D3B;
+$info-color                 : #593D3B; // Links and informational elements
 
 /* brands */
 $behance-color              : #1769FF;
@@ -102,8 +102,8 @@ $youtube-color              : #bb0000;
 $xing-color                 : #006567;
 
 /* links */
-$link-color                 : #420C14; // Link color
-$link-color-hover           : #420C14; // Hover state
+$link-color                 : #593D3B; // Link color
+$link-color-hover           : #593D3B; // Hover state
 $link-color-visited         : mix(#fff, $link-color, 25%);
 $masthead-link-color        : $primary-color;
 $masthead-link-color-hover  : mix(#000, $primary-color, 25%);
