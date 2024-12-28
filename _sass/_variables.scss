@@ -61,18 +61,19 @@ $darker-gray                : mix(#000, $gray, 60%);
 $light-gray                 : mix(#fff, $gray, 50%);
 $lighter-gray               : mix(#fff, $gray, 90%);
 
-$body-color                 : #fff;
-$background-color           : #fff;
+// Updated colors
+$body-color                 : #E7EFC5; // Background color
+$background-color           : #E7EFC5; // Background color
 $code-background-color      : #fafafa;
 $code-background-color-dark : $light-gray;
-$text-color                 : $dark-gray;
-$border-color               : $lighter-gray;
+$text-color                 : #413C58; // Text color
+$border-color               : #A3C4BC; // Subtle border color
 
-$primary-color              : #7a8288;
-$success-color              : #62c462;
-$warning-color              : #f89406;
+$primary-color              : #413C58; // Main color
+$success-color              : #BFD7B5; // Green tone for success
+$warning-color              : #A3C4BC; // Accent warning color
 $danger-color               : #ee5f5b;
-$info-color                 : #2f7f93;
+$info-color                 : #A3C4BC; // Links and informational elements
 
 /* brands */
 $behance-color              : #1769FF;
@@ -100,27 +101,18 @@ $vine-color                 : #00bf8f;
 $youtube-color              : #bb0000;
 $xing-color                 : #006567;
 
-
 /* links */
-$link-color                 : $info-color;
-$link-color-hover           : mix(#000, $link-color, 25%);
+$link-color                 : #BFD7B5; // Link color
+$link-color-hover           : #A3C4BC; // Hover state
 $link-color-visited         : mix(#fff, $link-color, 25%);
 $masthead-link-color        : $primary-color;
 $masthead-link-color-hover  : mix(#000, $primary-color, 25%);
-
 
 /*
    Breakpoints
    ========================================================================== */
 
 @include breakpoint-set("to ems", true);
-/*
-$small                      : 400px;
-$medium                     : 500px;
-$medium-wide                : 550px;
-$large                      : 1200px;
-$x-large                    : 1800px;
-*/
 
 $small                      : 600px !default;
 $medium                     : 768px !default;
@@ -145,14 +137,7 @@ $susy: (
   gutter-position: after,
   container: $large,
   global-box-sizing: border-box,
-  // debug: (
-  //   image: show,
-  //   color: blue,
-  //   output: overlay,
-  //   toggle: top right,
-  // ),
 );
-
 
 /*
    Other
