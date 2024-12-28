@@ -1,5 +1,5 @@
 ---
-title: "Introduction to International Relations"
+title: "Teaching Assistant: Introduction to International Relations"
 collection: teaching
 type: "Undergraduate Intro Course"
 permalink: /teaching/2024-spring-teaching-1
