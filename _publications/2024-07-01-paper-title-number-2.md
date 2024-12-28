@@ -3,7 +3,6 @@ title: "Climate change exposure, shareholder wealth, and the adoption of the Par
 collection: publications
 category: manuscripts
 permalink: /publication/2024-07-01-paper-title-number-2
-excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
 date: 2024-07-01
 venue: 'International Review of Financial Analysis'
 paperurl: 'https://www.sciencedirect.com/science/article/abs/pii/S105752192400259X'
