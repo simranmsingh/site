@@ -142,6 +142,8 @@ exclude:
   - README
   - tmp
   - vendor
+  - _talks
+  - _portfolio
 keep_files:
   - .git
   - .svn
