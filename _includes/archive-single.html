@@ -1,46 +1,70 @@
---- layout: default --- {% include base_path %} {% if page.header.overlay_color or page.header.overlay_image or page.header.image %} {% include page__hero.html %} {% endif %} {% if page.url != "/" and site.breadcrumbs %} {% unless paginator %} {% include breadcrumbs.html %} {% endunless %} {% endif %}
-{% include sidebar.html %}
-{% if page.title %}{% endif %} {% if page.excerpt %}{% endif %} {% if page.date %}{% endif %} {% if page.modified %}{% endif %}
-{% unless page.header.overlay_color or page.header.overlay_image %}
-{% if page.title %}
-{{ page.title | markdownify | remove: "
-" | remove: "
+{% include base_path %}
 
-" }}
-{% endif %} {% if page.read_time %}
-{% include read-time.html %}
-
-{% endif %} {% if page.modified %}
-{{ site.data.ui-text[site.locale].date_label | default: "Published:" }} {{ page.modified | date: "%B %d, %Y" }}
-
-{% endif %} {% if page.collection == 'teaching' %}
-{{ page.type }}, {{ page.venue }}, {{ page.date | default: "1900-01-01" | date: "%Y" }}
-
-{% elsif page.venue and page.date %}
-Published in {{ page.venue }}, {{ page.date | default: "1900-01-01" | date: "%Y" }}
-
-{% elsif page.date %}
-{{ site.data.ui-text[site.locale].date_label | default: "Published:" }} {{ page.date | default: "1900-01-01" | date: "%B %d, %Y" }}
-
-{% endif %} {% if page.citation and page.paperurl %}
-Recommended citation: {{ page.citation }} {{ page.paperurl }}
-
-{% elsif page.citation %}
-Recommended citation: {{ page.citation }}
-
+{% if post.header.teaser %}
+  {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
+{% else %}
+  {% assign teaser = site.teaser %}
 {% endif %}
-{% endunless %}
-{{ content }} {% if page.link %}
-{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}
+
+{% if post.id %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = post.title %}
 {% endif %}
-{% if site.data.ui-text[site.locale].meta_label %}
-{{ site.data.ui-text[site.locale].meta_label }}
-{% endif %} {% include page__taxonomy.html %}
-{% if page.share %}{% include social-share.html %}{% endif %} {% include post_pagination.html %}
-{% if site.comments.provider and page.comments %} {% include comments.html %} {% endif %}
-{% comment %}{% endcomment %} {% if page.id and page.related and site.related_posts.size > 0 %}
-{% if site.data.ui-text[site.locale].related_label %}
-{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}
-{% endif %}
-{% for post in site.related_posts limit:4 %} {% include archive-single.html type="grid" %} {% endfor %}
-{% endif %}
+
+<div class="{{ include.type | default: "list" }}__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    {% if include.type == "grid" and teaser %}
+      <div class="archive__item-teaser">
+        <img src=
+          {% if teaser contains "://" %}
+            "{{ teaser }}"
+          {% else %}
+            "{{ teaser | prepend: "/images/" | prepend: base_path }}"
+          {% endif %}
+          alt="">
+      </div>
+    {% endif %}
+
+    <h2 class="archive__item-title" itemprop="headline">
+      {% if post.link %}
+        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+      {% else %}
+        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+      {% endif %}
+    </h2>
+    
+    {% if post.read_time %}
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
+    {% endif %}
+
+        {% if post.collection == 'teaching' %}
+          <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+        {% elsif post.collection == 'publications' %}
+          <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+        {% elsif post.date %}
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
+        {% endif %}
+
+    {% if post.excerpt and site.read_more != 'enabled' %}
+    <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
+    {% elsif post.excerpt and site.read_more == 'enabled' %}
+    <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
+    {% endif %}
+    
+    {% if post.citation and post.paperurl and post.slidesurl %}
+      <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a></p>
+    {% elsif post.citation and post.paperurl %}
+      <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a></p>
+    {% elsif post.citation and post.slidesurl %}
+      <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.slidesurl }}">Download Slides</a></p>
+    {% elsif post.citation %}
+      <p>Recommended citation: {{ post.citation }}</p>
+    {% elsif post.paperurl %}
+      <p><a href=" {{ post.paperurl }} ">Download Paper</a></p>
+    {% elsif post.slidesurl %}
+      <p><a href="{{ post.slidesurl }}">Download Slides</a></p>
+    {% endif %}
+
+  </article>
+</div>
