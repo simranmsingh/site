@@ -33,9 +33,14 @@ Skills
 
 Publications
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+  <ul>
+    {% for post in site.publications reversed %}
+      {% if post.category != 'working_paper' %}
+        {% include archive-single-cv.html %}
+      {% endif %}
+    {% endfor %}
+  </ul>
+
   
 Teaching
 ======
