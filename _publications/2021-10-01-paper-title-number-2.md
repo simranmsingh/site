@@ -2,7 +2,7 @@
 title: "Financing the Transition to a Net-Zero Future"
 collection: publications
 category: other
-permalink: /publication/2024-07-01-paper-title-number-2
+permalink: /publication/2021-10-01-paper-title-number-2
 date: 2024-07-01
 venue: 'World Economic Forum'
 paperurl: 'https://www3.weforum.org/docs/WEF_Financing_the_Transition_to_a_Net_Zero_Future_2021.pdf'
