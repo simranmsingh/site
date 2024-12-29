@@ -30,7 +30,6 @@ Skills
 * Fluent in Hindi and Punjabi
 * Elementary proficiency in French
 
-
 Publications
 ======
   <ul>
@@ -52,4 +51,3 @@ Service and leadership
 ======
 * Member, Swarthmore Board of Managers’ Social Responsibility Committee (Sept. 2017 - May 2019)
 * Democracy Fellow, Campus Voter Project, Swarthmore College (Sept. 2018 - Sept. 2019)
-* 
