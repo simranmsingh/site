@@ -35,13 +35,10 @@ author:
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
-  working_papers:
+  books:
     title: 'Working Papers'
   manuscripts:
     title: 'Journal Articles'    
-  other:
-    title: 'Other Publications'
-
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
