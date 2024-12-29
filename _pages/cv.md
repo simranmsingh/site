@@ -34,7 +34,7 @@ Publications
 ======
   <ul>
     {% for post in site.publications reversed %}
-      {% if post.category != 'working_paper' %}
+      {% if post.category != 'working_papers' %}
         {% include archive-single-cv.html %}
       {% endif %}
     {% endfor %}
