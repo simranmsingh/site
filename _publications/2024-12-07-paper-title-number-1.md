@@ -3,6 +3,7 @@ title: "'Greener Pastures? A Labor Market Theory of Climate Governance' with Cal
 collection: publications
 category: working_papers
 date: 2024-12-07
+permalink: /publication/2024-12-07-paper-title-number-1
 venue: 'working_papers'
 paperurl: 'https://osf.io/preprints/osf/6ue7n'
 ---
