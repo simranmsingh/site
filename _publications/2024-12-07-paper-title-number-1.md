@@ -4,7 +4,7 @@ collection: publications
 category: working_papers
 permalink: 2024-12-07-paper-title-number-1
 date: 2024-12-07
-venue: 'working_papers'
+venue: ''
 paperurl: 'https://osf.io/preprints/osf/6ue7n'
 ---
 
